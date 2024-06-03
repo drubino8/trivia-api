@@ -45,7 +45,7 @@ text-decoration: none;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Change color and opacity as needed */
+    background: rgba(0, 0, 0, 0.6); /* Change color and opacity as needed */
     z-index: 1;
 }
 
