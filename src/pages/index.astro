@@ -44,13 +44,14 @@ const siteName = 'Valorant Agents';
                 <img src={agent.displayIcon} />
                 <h1>{agent.displayName}</h1>
                 <p>{agent.description}</p>
-                <ul>
-                    <li>Ability 1: {agent.abilities[0].displayName}</li>
-                    <li>Ability 2: {agent.abilities[1].displayName}</li>
-                    <li>Ability 3: {agent.abilities[2].displayName}</li>
-					<li>Ability 4: {agent.abilities[3].displayName}</li>
-                </ul>
+                <p>
+                    • Ability 1: {agent.abilities[0].displayName}<br>
+                    • Ability 2: {agent.abilities[1].displayName}<br>
+                    • Grenade: {agent.abilities[2].displayName}<br>
+					• Ultimate: {agent.abilities[3].displayName}
+                </p>
             </li>
+			
 					)
 				}
 		  
