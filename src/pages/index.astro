@@ -40,10 +40,17 @@ const siteName = 'Valorant Agents';
 				<!-- Your API Data -->
 				{
 					data.data.map( agent => 
-					<img src={agent.displayIcon} />
-					<h1>{agent.displayName}</h1>
-					<h3>{agent.role}</h3>
-					<p>{agent.description}</p>
+					<li style={`background-image: url(${agent.background});`}>
+                <img src={agent.displayIcon} />
+                <h1>{agent.displayName}</h1>
+                <p>{agent.description}</p>
+                <ul>
+                    <li>Ability 1: {agent.abilities[0].displayName}</li>
+                    <li>Ability 2: {agent.abilities[1].displayName}</li>
+                    <li>Ability 3: {agent.abilities[2].displayName}</li>
+					<li>Ability 4: {agent.abilities[3].displayName}</li>
+                </ul>
+            </li>
 					)
 				}
 		  
